@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
 
--- Instances:
 
 local MAINHUB = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
@@ -30,7 +27,7 @@ local UpdateText3 = Instance.new("TextLabel")
 local UISizeConstraint_3 = Instance.new("UISizeConstraint")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 
---Properties:
+
 
 MAINHUB.Name = "MAINHUB"
 MAINHUB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -196,12 +193,18 @@ UISizeConstraint_3.Parent = UpdateText3
 
 UIAspectRatioConstraint.Parent = MAINHUB
 
--- Scripts:
 
 -- MainFrame.boredweaky is disabled.
-local function VDDDU_fake_script() -- loader.LocalScript 
+local function SGUNU_fake_script() -- loader.LocalScript 
 	local script = Instance.new('LocalScript', loader)
 
+	function animate(Objects,Do,ti)
+		for i,v in pairs(Objects) do
+			game:GetService("TweenService"):Create(v, TweenInfo.new(ti,Enum.EasingStyle.Exponential,Enum.EasingDirection.Out), Do):Play()
+		end
+	end
+	
+	
 	local txt = "Please Wait"
 	
 	repeat
@@ -224,8 +227,8 @@ local function VDDDU_fake_script() -- loader.LocalScript
 	-- game checker
 	
 	local gameList = {
-		[1962086868] = {"https://github.com/UnknownExploiter/MainHub/blob/main/ToHGUIHub","Tower Of Hell"}, -- place id, URL 2 loadstring
-		[6388210846] = {"https://github.com/UnknownExploiter/MainHub/blob/main/ToHGUIHub","Roblox Studio"} -- testing place (hub main)
+		[1962086868] = {"https://raw.githubusercontent.com/UnknownExploiter/UnknownXHub/main/TowerOfHellHub","Tower Of Hell"}, -- place id, URL 2 loadstring
+		[6388210846] = {"","Roblox Studio"} -- testing place (hub main)
 	}
 	
 	local function showGui(ui)
@@ -259,8 +262,11 @@ local function VDDDU_fake_script() -- loader.LocalScript
 		show(result[2])
 		wait(3)
 		hide()
-		script.Parent.Parent.Parent:Destroy()
+		
+		-- Animations --
+		
+		
 		showGui(result[1])
 	end
 end
-coroutine.wrap(VDDDU_fake_script)()
+coroutine.wrap(SGUNU_fake_script)()
