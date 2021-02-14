@@ -1,272 +1,745 @@
 
 
-local MAINHUB = Instance.new("ScreenGui")
+local TOHGUIFORHUB = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
-local DropShadow = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local DropShadow = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
-local UICorner_3 = Instance.new("UICorner")
-local loader = Instance.new("TextLabel")
-local UICorner_4 = Instance.new("UICorner")
-local Frame = Instance.new("Frame")
-local UICorner_5 = Instance.new("UICorner")
-local text = Instance.new("TextLabel")
-local UICorner_6 = Instance.new("UICorner")
-local Frame_2 = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
-local UpdateLogs = Instance.new("TextLabel")
-local UICorner_8 = Instance.new("UICorner")
-local Frame_3 = Instance.new("Frame")
-local UICorner_9 = Instance.new("UICorner")
-local UpdateText1 = Instance.new("TextLabel")
-local UISizeConstraint = Instance.new("UISizeConstraint")
-local UpdateText2 = Instance.new("TextLabel")
-local UISizeConstraint_2 = Instance.new("UISizeConstraint")
-local UpdateText3 = Instance.new("TextLabel")
-local UISizeConstraint_3 = Instance.new("UISizeConstraint")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Subtitle = Instance.new("TextLabel")
+local RainbowFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Tabs = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Player = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local Fly = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local InfJumpText = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local RemoveAntiCheat = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Frame_3 = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local slider = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local main = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_14 = Instance.new("UICorner")
+local Frame_4 = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local slider2 = Instance.new("TextButton")
+local main_2 = Instance.new("Frame")
+local UICorner_16 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_18 = Instance.new("UICorner")
+local Frame_5 = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_20 = Instance.new("UICorner")
+local Frame_6 = Instance.new("Frame")
+local UICorner_21 = Instance.new("UICorner")
+local GodMode = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local Frame_7 = Instance.new("Frame")
+local UICorner_23 = Instance.new("UICorner")
+local Misc = Instance.new("Frame")
+local UICorner_24 = Instance.new("UICorner")
+local TabsButtons = Instance.new("Frame")
+local Player_2 = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local Frame_8 = Instance.new("Frame")
+local UICorner_26 = Instance.new("UICorner")
+local Misc_2 = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local Frame_9 = Instance.new("Frame")
+local UICorner_28 = Instance.new("UICorner")
+local UIListLayout_3 = Instance.new("UIListLayout")
 
+--Properties:
 
-
-MAINHUB.Name = "MAINHUB"
-MAINHUB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+TOHGUIFORHUB.Name = "TOHGUIFORHUB"
+TOHGUIFORHUB.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 MainFrame.Name = "MainFrame"
-MainFrame.Parent = MAINHUB
+MainFrame.Parent = TOHGUIFORHUB
 MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
 MainFrame.BackgroundColor3 = Color3.fromRGB(72, 72, 72)
-MainFrame.BorderColor3 = Color3.fromRGB(72, 72, 72)
-MainFrame.Position = UDim2.new(0.5, 0, 0.522222221, 0)
-MainFrame.Size = UDim2.new(0, 303, 0, 212)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame.Size = UDim2.new(0, 467, 0, 400)
 MainFrame.ZIndex = 2
+
+UICorner.Parent = MainFrame
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(-0.13490364, 0, 0, 0)
+Title.Size = UDim2.new(0, 303, 0, 39)
+Title.ZIndex = 3
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "Unknown X"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
 
 DropShadow.Name = "DropShadow"
 DropShadow.Parent = MainFrame
 DropShadow.BackgroundColor3 = Color3.fromRGB(86, 86, 86)
-DropShadow.BorderColor3 = Color3.fromRGB(72, 72, 72)
-DropShadow.Size = UDim2.new(0, 303, 0, 215)
+DropShadow.Size = UDim2.new(0, 467, 0, 406)
 
-UICorner.CornerRadius = UDim.new(0, 4)
-UICorner.Parent = DropShadow
+UICorner_2.Parent = DropShadow
 
-UICorner_2.CornerRadius = UDim.new(0, 4)
-UICorner_2.Parent = MainFrame
+UIAspectRatioConstraint.Parent = DropShadow
+UIAspectRatioConstraint.AspectRatio = 1.150
 
-TextLabel.Parent = MainFrame
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.0198019799, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 120, 0, 44)
+Subtitle.Name = "Subtitle"
+Subtitle.Parent = MainFrame
+Subtitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Subtitle.BackgroundTransparency = 1.000
+Subtitle.Position = UDim2.new(0.0192719493, 0, 0.0649999976, 0)
+Subtitle.Size = UDim2.new(0, 130, 0, 39)
+Subtitle.ZIndex = 3
+Subtitle.Font = Enum.Font.SourceSansBold
+Subtitle.Text = "Tower Of Hell"
+Subtitle.TextColor3 = Color3.fromRGB(0, 255, 127)
+Subtitle.TextScaled = true
+Subtitle.TextSize = 14.000
+Subtitle.TextWrapped = true
+
+RainbowFrame.Name = "RainbowFrame"
+RainbowFrame.Parent = MainFrame
+RainbowFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RainbowFrame.Position = UDim2.new(0, 0, 0.162500024, 0)
+RainbowFrame.Size = UDim2.new(0, 467, 0, 6)
+RainbowFrame.ZIndex = 3
+
+UICorner_3.CornerRadius = UDim.new(0, 1)
+UICorner_3.Parent = RainbowFrame
+
+Tabs.Name = "Tabs"
+Tabs.Parent = MainFrame
+Tabs.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+Tabs.ClipsDescendants = true
+Tabs.Position = UDim2.new(0.216274083, 0, 0.1875, 0)
+Tabs.Size = UDim2.new(0, 360, 0, 317)
+Tabs.ZIndex = 3
+
+UICorner_4.Parent = Tabs
+
+Player.Name = "Player"
+Player.Parent = Tabs
+Player.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+Player.Size = UDim2.new(1, 0, 1, 0)
+Player.ZIndex = 3
+
+UICorner_5.Parent = Player
+
+Fly.Name = "Fly"
+Fly.Parent = Player
+Fly.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.341666669, 0, 0.0240000002, 0)
+Fly.Size = UDim2.new(0, 113, 0, 37)
+Fly.ZIndex = 4
+Fly.AutoButtonColor = false
+Fly.Font = Enum.Font.SourceSansBold
+Fly.Text = "Fly"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextScaled = true
+Fly.TextSize = 14.000
+Fly.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 4)
+UICorner_6.Parent = Fly
+
+Frame.Parent = Fly
+Frame.BackgroundColor3 = Color3.fromRGB(0, 167, 81)
+Frame.Size = UDim2.new(0, 113, 0, 40)
+Frame.ZIndex = 3
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = Frame
+
+InfJumpText.Name = "InfJumpText"
+InfJumpText.Parent = Player
+InfJumpText.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+InfJumpText.BorderSizePixel = 0
+InfJumpText.Position = UDim2.new(0.0217777677, 0, 0.176419556, 0)
+InfJumpText.Size = UDim2.new(0, 113, 0, 37)
+InfJumpText.ZIndex = 4
+InfJumpText.AutoButtonColor = false
+InfJumpText.Font = Enum.Font.SourceSansBold
+InfJumpText.Text = "Inf Jump"
+InfJumpText.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfJumpText.TextScaled = true
+InfJumpText.TextSize = 14.000
+InfJumpText.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = InfJumpText
+
+Frame_2.Parent = InfJumpText
+Frame_2.BackgroundColor3 = Color3.fromRGB(0, 167, 81)
+Frame_2.Size = UDim2.new(0, 113, 0, 40)
+Frame_2.ZIndex = 3
+
+UICorner_9.CornerRadius = UDim.new(0, 4)
+UICorner_9.Parent = Frame_2
+
+RemoveAntiCheat.Name = "Remove Anti-Cheat"
+RemoveAntiCheat.Parent = Player
+RemoveAntiCheat.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+RemoveAntiCheat.BorderSizePixel = 0
+RemoveAntiCheat.Position = UDim2.new(0.0201522894, 0, 0.0283438712, 0)
+RemoveAntiCheat.Size = UDim2.new(0, 113, 0, 37)
+RemoveAntiCheat.ZIndex = 4
+RemoveAntiCheat.AutoButtonColor = false
+RemoveAntiCheat.Font = Enum.Font.SourceSansBold
+RemoveAntiCheat.Text = "Remove Anti-Cheat"
+RemoveAntiCheat.TextColor3 = Color3.fromRGB(255, 255, 255)
+RemoveAntiCheat.TextScaled = true
+RemoveAntiCheat.TextSize = 40.000
+RemoveAntiCheat.TextWrapped = true
+
+UICorner_10.CornerRadius = UDim.new(0, 4)
+UICorner_10.Parent = RemoveAntiCheat
+
+Frame_3.Parent = RemoveAntiCheat
+Frame_3.BackgroundColor3 = Color3.fromRGB(0, 167, 81)
+Frame_3.Size = UDim2.new(0, 113, 0, 40)
+Frame_3.ZIndex = 3
+
+UICorner_11.CornerRadius = UDim.new(0, 4)
+UICorner_11.Parent = Frame_3
+
+slider.Name = "slider"
+slider.Parent = Player
+slider.AnchorPoint = Vector2.new(0.5, 0.5)
+slider.BackgroundColor3 = Color3.fromRGB(0, 152, 68)
+slider.Position = UDim2.new(0.49618715, 0, 0.641955853, 0)
+slider.Size = UDim2.new(0.946514368, 0, 0.0700000003, 0)
+slider.ZIndex = 3
+slider.AutoButtonColor = false
+slider.Font = Enum.Font.SourceSans
+slider.Text = ""
+slider.TextColor3 = Color3.fromRGB(0, 0, 0)
+slider.TextSize = 1.000
+
+UICorner_12.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_12.Parent = slider
+
+UIListLayout.Parent = slider
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+main.Name = "main"
+main.Parent = slider
+main.Active = true
+main.AnchorPoint = Vector2.new(0.5, 0.5)
+main.BackgroundColor3 = Color3.fromRGB(61, 185, 90)
+main.BorderSizePixel = 0
+main.Position = UDim2.new(0.0230770726, 0, 0.50000006, 0)
+main.Size = UDim2.new(0.0461541601, 0, 1, 0)
+main.ZIndex = 5
+
+UICorner_13.CornerRadius = UDim.new(0, 2)
+UICorner_13.Parent = main
+
+TextLabel.Parent = slider
+TextLabel.Active = true
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 1, 0)
+TextLabel.Size = UDim2.new(1, 0, 1, 0)
 TextLabel.ZIndex = 4
 TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "Unknown X"
+TextLabel.Text = "1"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-UICorner_3.CornerRadius = UDim.new(0, 4)
-UICorner_3.Parent = TextLabel
+UICorner_14.CornerRadius = UDim.new(0, 4)
+UICorner_14.Parent = TextLabel
 
-loader.Name = "loader"
-loader.Parent = MainFrame
-loader.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-loader.Position = UDim2.new(0.264026403, 0, 0.820754707, 0)
-loader.Size = UDim2.new(0, 142, 0, 31)
-loader.ZIndex = 4
-loader.Font = Enum.Font.SourceSansBold
-loader.Text = "Please wait.."
-loader.TextColor3 = Color3.fromRGB(255, 255, 255)
-loader.TextScaled = true
-loader.TextSize = 14.000
-loader.TextWrapped = true
+Frame_4.Parent = TextLabel
+Frame_4.Active = true
+Frame_4.BackgroundColor3 = Color3.fromRGB(0, 202, 98)
+Frame_4.Position = UDim2.new(8.95612899e-08, 0, 0, 0)
+Frame_4.Selectable = true
+Frame_4.Size = UDim2.new(0, 340, 0, 25)
+Frame_4.ZIndex = 3
 
-UICorner_4.CornerRadius = UDim.new(0, 4)
-UICorner_4.Parent = loader
+UICorner_15.CornerRadius = UDim.new(0, 4)
+UICorner_15.Parent = Frame_4
 
-Frame.Parent = loader
-Frame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Frame.Size = UDim2.new(0, 142, 0, 34)
-Frame.ZIndex = 3
+slider2.Name = "slider2"
+slider2.Parent = Player
+slider2.AnchorPoint = Vector2.new(0.5, 0.5)
+slider2.BackgroundColor3 = Color3.fromRGB(0, 152, 68)
+slider2.Position = UDim2.new(0.49618715, 0, 0.834384799, 0)
+slider2.Size = UDim2.new(0.946514368, 0, 0.0700000003, 0)
+slider2.ZIndex = 3
+slider2.AutoButtonColor = false
+slider2.Font = Enum.Font.SourceSans
+slider2.Text = ""
+slider2.TextColor3 = Color3.fromRGB(0, 0, 0)
+slider2.TextSize = 1.000
 
-UICorner_5.CornerRadius = UDim.new(0, 4)
-UICorner_5.Parent = Frame
+main_2.Name = "main"
+main_2.Parent = slider2
+main_2.Active = true
+main_2.AnchorPoint = Vector2.new(0.5, 0.5)
+main_2.BackgroundColor3 = Color3.fromRGB(61, 185, 90)
+main_2.BorderSizePixel = 0
+main_2.Position = UDim2.new(0.0230770726, 0, 0.50000006, 0)
+main_2.Size = UDim2.new(0.0461541601, 0, 1, 0)
+main_2.ZIndex = 5
 
-text.Name = "text"
-text.Parent = MainFrame
-text.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-text.Position = UDim2.new(0.475247502, 0, 0.0330188721, 0)
-text.Size = UDim2.new(0, 130, 0, 30)
-text.ZIndex = 4
-text.Font = Enum.Font.SourceSansBold
-text.Text = "Made by U_E#5717 and BoredWeaky#5375"
-text.TextColor3 = Color3.fromRGB(255, 255, 255)
-text.TextScaled = true
-text.TextSize = 14.000
-text.TextWrapped = true
+UICorner_16.CornerRadius = UDim.new(0, 2)
+UICorner_16.Parent = main_2
 
-UICorner_6.CornerRadius = UDim.new(0, 4)
-UICorner_6.Parent = text
+UICorner_17.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_17.Parent = slider2
 
-Frame_2.Parent = text
-Frame_2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Frame_2.Size = UDim2.new(0, 130, 0, 34)
-Frame_2.ZIndex = 3
+TextLabel_2.Parent = slider2
+TextLabel_2.Active = true
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 1, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_2.ZIndex = 4
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "1"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
 
-UICorner_7.CornerRadius = UDim.new(0, 4)
-UICorner_7.Parent = Frame_2
+UICorner_18.CornerRadius = UDim.new(0, 4)
+UICorner_18.Parent = TextLabel_2
 
-UpdateLogs.Name = "UpdateLogs"
-UpdateLogs.Parent = MainFrame
-UpdateLogs.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
-UpdateLogs.BackgroundTransparency = 1.000
-UpdateLogs.Position = UDim2.new(0.0264026411, 0, 0.207547173, 0)
-UpdateLogs.Size = UDim2.new(0, 256, 0, 35)
-UpdateLogs.ZIndex = 4
-UpdateLogs.Font = Enum.Font.SourceSansBold
-UpdateLogs.Text = "Update V.0.1 (13/02/2021):"
-UpdateLogs.TextColor3 = Color3.fromRGB(255, 255, 255)
-UpdateLogs.TextScaled = true
-UpdateLogs.TextSize = 14.000
-UpdateLogs.TextWrapped = true
+Frame_5.Parent = TextLabel_2
+Frame_5.Active = true
+Frame_5.BackgroundColor3 = Color3.fromRGB(0, 202, 98)
+Frame_5.Position = UDim2.new(8.95612899e-08, 0, 0, 0)
+Frame_5.Selectable = true
+Frame_5.Size = UDim2.new(0, 340, 0, 25)
+Frame_5.ZIndex = 3
 
-UICorner_8.CornerRadius = UDim.new(0, 4)
-UICorner_8.Parent = UpdateLogs
+UICorner_19.CornerRadius = UDim.new(0, 4)
+UICorner_19.Parent = Frame_5
 
-Frame_3.Parent = UpdateLogs
-Frame_3.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
-Frame_3.Position = UDim2.new(0, 0, 0.0760869533, 0)
-Frame_3.Size = UDim2.new(0, 287, 0, 116)
-Frame_3.ZIndex = 3
+UIListLayout_2.Parent = slider2
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 
-UICorner_9.CornerRadius = UDim.new(0, 4)
-UICorner_9.Parent = Frame_3
+TextLabel_3.Parent = Player
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+TextLabel_3.Position = UDim2.new(0.0222935993, 0, 0.463927418, 0)
+TextLabel_3.Size = UDim2.new(0, 240, 0, 36)
+TextLabel_3.ZIndex = 4
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Speed and Jump Power:"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
 
-UpdateText1.Name = "UpdateText1"
-UpdateText1.Parent = MainFrame
-UpdateText1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-UpdateText1.BackgroundTransparency = 1.000
-UpdateText1.Position = UDim2.new(0.0477768295, 0, 0.325157166, 0)
-UpdateText1.Size = UDim2.new(0, 242, 0, 33)
-UpdateText1.ZIndex = 4
-UpdateText1.Font = Enum.Font.SourceSansBold
-UpdateText1.Text = "+ Added Tower Of Hell GUI"
-UpdateText1.TextColor3 = Color3.fromRGB(255, 255, 255)
-UpdateText1.TextScaled = true
-UpdateText1.TextSize = 14.000
-UpdateText1.TextWrapped = true
+UICorner_20.CornerRadius = UDim.new(0, 4)
+UICorner_20.Parent = TextLabel_3
 
-UISizeConstraint.Parent = UpdateText1
+Frame_6.Parent = TextLabel_3
+Frame_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame_6.Position = UDim2.new(0, 0, 4.23855255e-07, 0)
+Frame_6.Size = UDim2.new(0, 240, 0, 38)
+Frame_6.ZIndex = 3
 
-UpdateText2.Name = "UpdateText2"
-UpdateText2.Parent = MainFrame
-UpdateText2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-UpdateText2.BackgroundTransparency = 1.000
-UpdateText2.Position = UDim2.new(0.0477768295, 0, 0.375277489, 0)
-UpdateText2.Size = UDim2.new(0, 105, 0, 55)
-UpdateText2.ZIndex = 4
-UpdateText2.Font = Enum.Font.SourceSansBold
-UpdateText2.Text = "+ Better UI"
-UpdateText2.TextColor3 = Color3.fromRGB(255, 255, 255)
-UpdateText2.TextScaled = true
-UpdateText2.TextSize = 14.000
-UpdateText2.TextWrapped = true
+UICorner_21.CornerRadius = UDim.new(0, 4)
+UICorner_21.Parent = Frame_6
 
-UISizeConstraint_2.Parent = UpdateText2
+GodMode.Name = "GodMode"
+GodMode.Parent = Player
+GodMode.BackgroundColor3 = Color3.fromRGB(0, 255, 127)
+GodMode.BorderSizePixel = 0
+GodMode.Position = UDim2.new(0.672930062, 0, 0.0251892805, 0)
+GodMode.Size = UDim2.new(0, 113, 0, 37)
+GodMode.ZIndex = 4
+GodMode.AutoButtonColor = false
+GodMode.Font = Enum.Font.SourceSansBold
+GodMode.Text = "Gode Mode"
+GodMode.TextColor3 = Color3.fromRGB(255, 255, 255)
+GodMode.TextScaled = true
+GodMode.TextSize = 40.000
+GodMode.TextWrapped = true
 
-UpdateText3.Name = "UpdateText3"
-UpdateText3.Parent = MainFrame
-UpdateText3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-UpdateText3.BackgroundTransparency = 1.000
-UpdateText3.Position = UDim2.new(0.0477768295, 0, 0.595208824, 0)
-UpdateText3.Size = UDim2.new(0, 242, 0, 55)
-UpdateText3.ZIndex = 4
-UpdateText3.Font = Enum.Font.SourceSansBold
-UpdateText3.Text = ""
-UpdateText3.TextColor3 = Color3.fromRGB(255, 255, 255)
-UpdateText3.TextScaled = true
-UpdateText3.TextSize = 14.000
-UpdateText3.TextWrapped = true
+UICorner_22.CornerRadius = UDim.new(0, 4)
+UICorner_22.Parent = GodMode
 
-UISizeConstraint_3.Parent = UpdateText3
+Frame_7.Parent = GodMode
+Frame_7.BackgroundColor3 = Color3.fromRGB(0, 167, 81)
+Frame_7.Size = UDim2.new(0, 113, 0, 40)
+Frame_7.ZIndex = 3
 
-UIAspectRatioConstraint.Parent = MAINHUB
+UICorner_23.CornerRadius = UDim.new(0, 4)
+UICorner_23.Parent = Frame_7
 
+Misc.Name = "Misc"
+Misc.Parent = Tabs
+Misc.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+Misc.Size = UDim2.new(1, 0, 1, 0)
+Misc.Visible = false
+Misc.ZIndex = 3
 
--- MainFrame.boredweaky is disabled.
-local function SGUNU_fake_script() -- loader.LocalScript 
-	local script = Instance.new('LocalScript', loader)
+UICorner_24.Parent = Misc
 
-	function animate(Objects,Do,ti)
-		for i,v in pairs(Objects) do
-			game:GetService("TweenService"):Create(v, TweenInfo.new(ti,Enum.EasingStyle.Exponential,Enum.EasingDirection.Out), Do):Play()
-		end
-	end
+TabsButtons.Name = "TabsButtons"
+TabsButtons.Parent = MainFrame
+TabsButtons.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+TabsButtons.BackgroundTransparency = 1.000
+TabsButtons.Position = UDim2.new(0, 0, 0.188000023, 0)
+TabsButtons.Size = UDim2.new(0, 100, 0, 316)
+TabsButtons.ZIndex = 3
+
+Player_2.Name = "Player"
+Player_2.Parent = TabsButtons
+Player_2.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+Player_2.BorderSizePixel = 0
+Player_2.Position = UDim2.new(-0.255728036, 0, 0.0257255342, 0)
+Player_2.Size = UDim2.new(0, 82, 0, 31)
+Player_2.ZIndex = 4
+Player_2.AutoButtonColor = false
+Player_2.Font = Enum.Font.SourceSansBold
+Player_2.Text = "Player"
+Player_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Player_2.TextScaled = true
+Player_2.TextSize = 14.000
+Player_2.TextWrapped = true
+
+UICorner_25.CornerRadius = UDim.new(0, 4)
+UICorner_25.Parent = Player_2
+
+Frame_8.Parent = Player_2
+Frame_8.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Frame_8.Size = UDim2.new(0, 82, 0, 34)
+Frame_8.ZIndex = 3
+
+UICorner_26.CornerRadius = UDim.new(0, 4)
+UICorner_26.Parent = Frame_8
+
+Misc_2.Name = "Misc"
+Misc_2.Parent = TabsButtons
+Misc_2.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+Misc_2.BorderSizePixel = 0
+Misc_2.Position = UDim2.new(0.0183618963, 0, 0.369889587, 0)
+Misc_2.Size = UDim2.new(0, 82, 0, 31)
+Misc_2.ZIndex = 4
+Misc_2.AutoButtonColor = false
+Misc_2.Font = Enum.Font.SourceSansBold
+Misc_2.Text = "Misc"
+Misc_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc_2.TextScaled = true
+Misc_2.TextSize = 14.000
+Misc_2.TextWrapped = true
+
+UICorner_27.CornerRadius = UDim.new(0, 4)
+UICorner_27.Parent = Misc_2
+
+Frame_9.Parent = Misc_2
+Frame_9.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Frame_9.Size = UDim2.new(0, 82, 0, 34)
+Frame_9.ZIndex = 3
+
+UICorner_28.CornerRadius = UDim.new(0, 4)
+UICorner_28.Parent = Frame_9
+
+UIListLayout_3.Parent = TabsButtons
+UIListLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0, 10)
+
+-- Scripts:
+
+local function BGPFMH_fake_script() -- RainbowFrame.LocalScript 
+	local script = Instance.new('LocalScript', RainbowFrame)
+
+	local t = 5; 
 	
+	local tick = tick
+	local fromHSV = Color3.fromHSV
+	local RunService = game:GetService("RunService")
+	local Frame = script.Parent
 	
-	local txt = "Please Wait"
-	
-	repeat
-		wait(1)
-		script.Parent.Text = txt
-		wait(1)
-		script.Parent.Text = txt.."."
-		wait(1)
-		script.Parent.Text = txt..".."
-		wait(1)
-		script.Parent.Text = txt.."..."
-		wait(1)
-		script.Parent.Text = txt..".."
-		wait(1)
-		script.Parent.Text = txt.."."
-	until game.Loaded
-	
-	script.Parent.Text = "--"
-	
-	-- game checker
-	
-	local gameList = {
-		[1962086868] = {"https://raw.githubusercontent.com/UnknownExploiter/UnknownXHub/main/TowerOfHellHub","Tower Of Hell"}, -- place id, URL 2 loadstring
-		[6388210846] = {"","Roblox Studio"} -- testing place (hub main)
-	}
-	
-	local function showGui(ui)
-		loadstring(game:HttpGet(ui))()
-	end
-	
-	local kickmsg = "\nNot found\nGame ID: "..tostring(game.PlaceId).."\nUnknownHub"
-	local result = gameList[game.PlaceId] or kickmsg
-	
-	
-	function show(text)
-		script.Parent.Text = text
-	
-		for ix=1,10 do
-			script.Parent.TextTransparency -= ix/10
-			wait(0.02)
-		end
-	end
-	
-	function hide()
-		for ix=1,10 do
-			script.Parent.TextTransparency = ix/10
-			wait(0.02)
-		end
-	end
-	
-	if result == kickmsg then
-		game.Players.LocalPlayer:Kick('\nThis game is not supported.\n\nUnknownHub')
-	else
-		hide()
-		show(result[2])
-		wait(3)
-		hide()
-		
-		-- Animations --
-		
-		
-		showGui(result[1])
-	end
+	RunService:BindToRenderStep("Rainbow", 1000, function()
+		local hue = tick() % t / t
+		local color = fromHSV(hue, 1, 1)
+		Frame.BackgroundColor3 = color
+	end)
 end
-coroutine.wrap(SGUNU_fake_script)()
+coroutine.wrap(BGPFMH_fake_script)()
+local function ODGZQI_fake_script() -- MainFrame.Dragify 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UIS = game:GetService("UserInputService")
+	function dragify(Frame)
+	    dragToggle = nil
+	    local dragSpeed = 0
+	    dragInput = nil
+	    dragStart = nil
+	    local dragPos = nil
+	    function updateInput(input)
+	        local Delta = input.Position - dragStart
+	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.25), {Position = Position}):Play()
+	    end
+	    Frame.InputBegan:Connect(function(input)
+	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+	            dragToggle = true
+	            dragStart = input.Position
+	            startPos = Frame.Position
+	            input.Changed:Connect(function()
+	                if input.UserInputState == Enum.UserInputState.End then
+	                    dragToggle = false
+	                end
+	            end)
+	        end
+	    end)
+	    Frame.InputChanged:Connect(function(input)
+	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	            dragInput = input
+	        end
+	    end)
+	    game:GetService("UserInputService").InputChanged:Connect(function(input)
+	        if input == dragInput and dragToggle then
+	            updateInput(input)
+	        end
+	    end)
+	end
+	
+	dragify(script.Parent)
+end
+coroutine.wrap(ODGZQI_fake_script)()
+local function CTNDGSK_fake_script() -- InfJumpText.LocalScript 
+	local script = Instance.new('LocalScript', InfJumpText)
+
+	script.Parent.MouseButton1Click:connect(function()
+	local Player = game:GetService'Players'.LocalPlayer;
+	local UIS = game:GetService'UserInputService';
+	 
+	_G.JumpHeight = 50;
+	 
+	function Action(Object, Function) if Object ~= nil then Function(Object); end end
+	 
+	UIS.InputBegan:connect(function(UserInput)
+	    if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+	        Action(Player.Character.Humanoid, function(self)
+	            if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+	                Action(self.Parent.HumanoidRootPart, function(self)
+	                    self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+	                end)
+	            end
+	        end)
+	    end
+	end)
+	end)
+end
+coroutine.wrap(CTNDGSK_fake_script)()
+local function AOXIWVD_fake_script() -- RemoveAntiCheat.LocalScript 
+	local script = Instance.new('LocalScript', RemoveAntiCheat)
+
+	script.Parent.MouseButton1Click:connect(function()
+	return(function(better_IIllIlIlIlllllIIIIIllllII,better_lllIIllllllllIll,better_lIlllIIIlllIIIIIIllIlll)local better_IlllIIIlIllllIIlIIlllII=string.char;local better_IIllIllIIIIllllllIllll=string.sub;local better_lIlllllIlIIllIllllIlIllIl=table.concat;local better_lIIIlIIlIlIIlIll=math.ldexp;local better_IIIlIllIlIIlIlllI=getfenv or function()return _ENV end;local better_IIllIlIIII=select;local better_llllIllIIIlIllIll=unpack or table.unpack;local better_IllIllIlIIIlIlIIIlll=tonumber;local function better_lIlIIIlIIlllIlIII(better_lIIlIllllIIlII)local better_lIlllllllIIlIIlIlIIIII,better_llIIllIIllIl,better_IlllllIIllIllIlllllll="","",{}local better_llllIllIIIlIllIll=256;local better_lIlIlIIllIIll={}for better_lllIIllllllllIll=0,better_llllIllIIIlIllIll-1 do better_lIlIlIIllIIll[better_lllIIllllllllIll]=better_IlllIIIlIllllIIlIIlllII(better_lllIIllllllllIll)end;local better_lllIIllllllllIll=1;local function better_IIllIlIlIlllllIIIIIllllII()local better_lIlllllllIIlIIlIlIIIII=better_IllIllIlIIIlIlIIIlll(better_IIllIllIIIIllllllIllll(better_lIIlIllllIIlII,better_lllIIllllllllIll,better_lllIIllllllllIll),36)better_lllIIllllllllIll=better_lllIIllllllllIll+1;local better_llIIllIIllIl=better_IllIllIlIIIlIlIIIlll(better_IIllIllIIIIllllllIllll(better_lIIlIllllIIlII,better_lllIIllllllllIll,better_lllIIllllllllIll+better_lIlllllllIIlIIlIlIIIII-1),36)better_lllIIllllllllIll=better_lllIIllllllllIll+better_lIlllllllIIlIIlIlIIIII;return better_llIIllIIllIl end;better_lIlllllllIIlIIlIlIIIII=better_IlllIIIlIllllIIlIIlllII(better_IIllIlIlIlllllIIIIIllllII())better_IlllllIIllIllIlllllll[1]=better_lIlllllllIIlIIlIlIIIII;while better_lllIIllllllllIll<#better_lIIlIllllIIlII do local better_lllIIllllllllIll=better_IIllIlIlIlllllIIIIIllllII()if better_lIlIlIIllIIll[better_lllIIllllllllIll]then better_llIIllIIllIl=better_lIlIlIIllIIll[better_lllIIllllllllIll]else better_llIIllIIllIl=better_lIlllllllIIlIIlIlIIIII..better_IIllIllIIIIllllllIllll(better_lIlllllllIIlIIlIlIIIII,1,1)end;better_lIlIlIIllIIll[better_llllIllIIIlIllIll]=better_lIlllllllIIlIIlIlIIIII..better_IIllIllIIIIllllllIllll(better_llIIllIIllIl,1,1)better_IlllllIIllIllIlllllll[#better_IlllllIIllIllIlllllll+1],better_lIlllllllIIlIIlIlIIIII,better_llllIllIIIlIllIll=better_llIIllIIllIl,better_llIIllIIllIl,better_llllIllIIIlIllIll+1 end;return table.concat(better_IlllllIIllIllIlllllll)end;local better_IllIllIlIIIlIlIIIlll=better_lIlIIIlIIlllIlIII('26R26F27526E26B27526F23K23Q23U23M26E26L27924G23M24325023M24524123Y23O27E26827925323V23Q24E27M24426E26K27924R23S23O23Q23V27U27W27M26E26I27T27V27X24525023O24523Y24724327Z28127528328523V28H28J28L26E26G27923K27J24523Q24027D24323Q29523P23V27R27925425423Y23T23N23M24F28027924429023M23Q23N23S23T23V24E29J27523T23M24023O23O23V23S24424224527E26N27924J23Y24423Q29823M23N26D26E27727924023Q23Y24326F23H23I2AQ2AQ22M26026E26A2792472AL24527Z26M27924K23Z23Q29123O24328A28O26F27I2432B423Y23V23N2A523T2AI27524P27C27E26H27923O2A42BJ27K23M2B823Y29Q26E27S27524J23M24424324523S24E26F25Y27926T25U27926E27925J27927926D26F26T2752CL26C2CJ2CJ2CL2CL2CI2CR2782CV2CJ2AW2CY2792692CM27626F2C12D426F2CL2CG2CR2CG2CT26F25J2672D926F2CG2A726T25W26F2CQ2B22CW2DJ2CR26F2AW2DT2DO2DU2DS2CN2DX27G27526926V26F2782D52CL2D62DW2EA2CO2CJ28X2CQ2DE2E52DS2A72CQ2E02DP2DT2782DB2CZ2DS2CR2CQ2AW2CG25Z2CJ28126J2CM26W2DX28C27526T2CN2782BQ2ET2DI2CG2EM26F28X2F52752EP2CH2FH2E62DI2E02D32CQ2DR2D32CU2FK2782CX2FT26F2E52CV2FU26F26U2752AW2782DV2752BQ2FP2DY26B25E27925M2DS2DG26F2A727S2CN25D2732GH26F2GE2CG26S2E62GC2752GP2DF2722GN27S27426F25N2GN2DA26F26926O2DX25R2DS2CL2GB2792H92CG2HC2752712ES25L2CF2HL2ED2762BB23O23Z2BW23W28R29924526E2A72C22AA2AC2992AF2G22F52F22H427925G2FB2DI26925X2DI2812CG2HF2GT26F2IF2752CI2E92D22702792IK2HB2II2IK2GL2DS2IR2GS2IQ2ES2HN2CJ2EG2DI2FJ2I72D52G92DR2EQ2CK2FL2CR2IN2DW2JA279');local better_lllIIllllllllIll=(bit or bit32);local better_lIlIlIIllIIll=better_lllIIllllllllIll and better_lllIIllllllllIll.bxor or function(better_lllIIllllllllIll,better_llIIllIIllIl)local better_lIlllllllIIlIIlIlIIIII,better_lIlIlIIllIIll,better_IIllIllIIIIllllllIllll=1,0,10 while better_lllIIllllllllIll>0 and better_llIIllIIllIl>0 do local better_llllIllIIIlIllIll,better_IIllIllIIIIllllllIllll=better_lllIIllllllllIll%2,better_llIIllIIllIl%2 if better_llllIllIIIlIllIll~=better_IIllIllIIIIllllllIllll then better_lIlIlIIllIIll=better_lIlIlIIllIIll+better_lIlllllllIIlIIlIlIIIII end better_lllIIllllllllIll,better_llIIllIIllIl,better_lIlllllllIIlIIlIlIIIII=(better_lllIIllllllllIll-better_llllIllIIIlIllIll)/2,(better_llIIllIIllIl-better_IIllIllIIIIllllllIllll)/2,better_lIlllllllIIlIIlIlIIIII*2 end if better_lllIIllllllllIll<better_llIIllIIllIl then better_lllIIllllllllIll=better_llIIllIIllIl end while better_lllIIllllllllIll>0 do local better_llIIllIIllIl=better_lllIIllllllllIll%2 if better_llIIllIIllIl>0 then better_lIlIlIIllIIll=better_lIlIlIIllIIll+better_lIlllllllIIlIIlIlIIIII end better_lllIIllllllllIll,better_lIlllllllIIlIIlIlIIIII=(better_lllIIllllllllIll-better_llIIllIIllIl)/2,better_lIlllllllIIlIIlIlIIIII*2 end return better_lIlIlIIllIIll end local function better_llIIllIIllIl(better_llIIllIIllIl,better_lllIIllllllllIll,better_lIlllllllIIlIIlIlIIIII)if better_lIlllllllIIlIIlIlIIIII then local better_lllIIllllllllIll=(better_llIIllIIllIl/2^(better_lllIIllllllllIll-1))%2^((better_lIlllllllIIlIIlIlIIIII-1)-(better_lllIIllllllllIll-1)+1);return better_lllIIllllllllIll-better_lllIIllllllllIll%1;else local better_lllIIllllllllIll=2^(better_lllIIllllllllIll-1);return(better_llIIllIIllIl%(better_lllIIllllllllIll+better_lllIIllllllllIll)>=better_lllIIllllllllIll)and 1 or 0;end;end;local better_lllIIllllllllIll=1;local function better_lIlllllllIIlIIlIlIIIII()local better_lIlllllllIIlIIlIlIIIII,better_llIIllIIllIl,better_IIllIllIIIIllllllIllll,better_llllIllIIIlIllIll=better_IIllIlIlIlllllIIIIIllllII(better_IllIllIlIIIlIlIIIlll,better_lllIIllllllllIll,better_lllIIllllllllIll+3);better_lIlllllllIIlIIlIlIIIII=better_lIlIlIIllIIll(better_lIlllllllIIlIIlIlIIIII,231)better_llIIllIIllIl=better_lIlIlIIllIIll(better_llIIllIIllIl,231)better_IIllIllIIIIllllllIllll=better_lIlIlIIllIIll(better_IIllIllIIIIllllllIllll,231)better_llllIllIIIlIllIll=better_lIlIlIIllIIll(better_llllIllIIIlIllIll,231)better_lllIIllllllllIll=better_lllIIllllllllIll+4;return(better_llllIllIIIlIllIll*16777216)+(better_IIllIllIIIIllllllIllll*65536)+(better_llIIllIIllIl*256)+better_lIlllllllIIlIIlIlIIIII;end;local function better_lIIlIllllIIlII()local better_lIlllllllIIlIIlIlIIIII=better_lIlIlIIllIIll(better_IIllIlIlIlllllIIIIIllllII(better_IllIllIlIIIlIlIIIlll,better_lllIIllllllllIll,better_lllIIllllllllIll),231);better_lllIIllllllllIll=better_lllIIllllllllIll+1;return better_lIlllllllIIlIIlIlIIIII;end;local function better_IlllllIIllIllIlllllll()local better_llIIllIIllIl,better_lIlllllllIIlIIlIlIIIII=better_IIllIlIlIlllllIIIIIllllII(better_IllIllIlIIIlIlIIIlll,better_lllIIllllllllIll,better_lllIIllllllllIll+2);better_llIIllIIllIl=better_lIlIlIIllIIll(better_llIIllIIllIl,231)better_lIlllllllIIlIIlIlIIIII=better_lIlIlIIllIIll(better_lIlllllllIIlIIlIlIIIII,231)better_lllIIllllllllIll=better_lllIIllllllllIll+2;return(better_lIlllllllIIlIIlIlIIIII*256)+better_llIIllIIllIl;end;local function better_IllIIIIIIIIIlllllIllIIlI()local better_lllIIllllllllIll=better_lIlllllllIIlIIlIlIIIII();local better_lIlllllllIIlIIlIlIIIII=better_lIlllllllIIlIIlIlIIIII();local better_IIllIllIIIIllllllIllll=1;local better_lIlIlIIllIIll=(better_llIIllIIllIl(better_lIlllllllIIlIIlIlIIIII,1,20)*(2^32))+better_lllIIllllllllIll;local better_lllIIllllllllIll=better_llIIllIIllIl(better_lIlllllllIIlIIlIlIIIII,21,31);local better_lIlllllllIIlIIlIlIIIII=((-1)^better_llIIllIIllIl(better_lIlllllllIIlIIlIlIIIII,32));if(better_lllIIllllllllIll==0)then if(better_lIlIlIIllIIll==0)then return better_lIlllllllIIlIIlIlIIIII*0;else better_lllIIllllllllIll=1;better_IIllIllIIIIllllllIllll=0;end;elseif(better_lllIIllllllllIll==2047)then return(better_lIlIlIIllIIll==0)and(better_lIlllllllIIlIIlIlIIIII*(1/0))or(better_lIlllllllIIlIIlIlIIIII*(0/0));end;return better_lIIIlIIlIlIIlIll(better_lIlllllllIIlIIlIlIIIII,better_lllIIllllllllIll-1023)*(better_IIllIllIIIIllllllIllll+(better_lIlIlIIllIIll/(2^52)));end;local better_lIlIIIlIIlllIlIII=better_lIlllllllIIlIIlIlIIIII;local function better_lIIIlIIlIlIIlIll(better_lIlllllllIIlIIlIlIIIII)local better_llIIllIIllIl;if(not better_lIlllllllIIlIIlIlIIIII)then better_lIlllllllIIlIIlIlIIIII=better_lIlIIIlIIlllIlIII();if(better_lIlllllllIIlIIlIlIIIII==0)then return'';end;end;better_llIIllIIllIl=better_IIllIllIIIIllllllIllll(better_IllIllIlIIIlIlIIIlll,better_lllIIllllllllIll,better_lllIIllllllllIll+better_lIlllllllIIlIIlIlIIIII-1);better_lllIIllllllllIll=better_lllIIllllllllIll+better_lIlllllllIIlIIlIlIIIII;local better_lIlllllllIIlIIlIlIIIII={}for better_lllIIllllllllIll=1,#better_llIIllIIllIl do better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll]=better_IlllIIIlIllllIIlIIlllII(better_lIlIlIIllIIll(better_IIllIlIlIlllllIIIIIllllII(better_IIllIllIIIIllllllIllll(better_llIIllIIllIl,better_lllIIllllllllIll,better_lllIIllllllllIll)),231))end return better_lIlllllIlIIllIllllIlIllIl(better_lIlllllllIIlIIlIlIIIII);end;local better_lllIIllllllllIll=better_lIlllllllIIlIIlIlIIIII;local function better_lIlllllIlIIllIllllIlIllIl(...)return{...},better_IIllIlIIII('#',...)end local function better_IllIllIlIIIlIlIIIlll()local better_IlllIIIlIllllIIlIIlllII={};local better_IIllIlIlIlllllIIIIIllllII={};local better_lllIIllllllllIll={};local better_lIlIIIlIIlllIlIII={[#{{138;430;421;624};{644;481;163;458};}]=better_IIllIlIlIlllllIIIIIllllII,[#{{337;459;891;736};{739;36;34;948};{37;222;397;477};}]=nil,[#{"1 + 1 = 111";"1 + 1 = 111";{374;646;677;741};{36;323;899;643};}]=better_lllIIllllllllIll,[#{{728;423;422;958};}]=better_IlllIIIlIllllIIlIIlllII,};local better_lllIIllllllllIll=better_lIlllllllIIlIIlIlIIIII()local better_IIllIllIIIIllllllIllll={}for better_llIIllIIllIl=1,better_lllIIllllllllIll do local better_lIlllllllIIlIIlIlIIIII=better_lIIlIllllIIlII();local better_lllIIllllllllIll;if(better_lIlllllllIIlIIlIlIIIII==2)then better_lllIIllllllllIll=(better_lIIlIllllIIlII()~=0);elseif(better_lIlllllllIIlIIlIlIIIII==0)then better_lllIIllllllllIll=better_IllIIIIIIIIIlllllIllIIlI();elseif(better_lIlllllllIIlIIlIlIIIII==1)then better_lllIIllllllllIll=better_lIIIlIIlIlIIlIll();end;better_IIllIllIIIIllllllIllll[better_llIIllIIllIl]=better_lllIIllllllllIll;end;better_lIlIIIlIIlllIlIII[3]=better_lIIlIllllIIlII();for better_IIllIlIlIlllllIIIIIllllII=1,better_lIlllllllIIlIIlIlIIIII()do local better_lllIIllllllllIll=better_lIIlIllllIIlII();if(better_llIIllIIllIl(better_lllIIllllllllIll,1,1)==0)then local better_lIlIlIIllIIll=better_llIIllIIllIl(better_lllIIllllllllIll,2,3);local better_llllIllIIIlIllIll=better_llIIllIIllIl(better_lllIIllllllllIll,4,6);local better_lllIIllllllllIll={better_IlllllIIllIllIlllllll(),better_IlllllIIllIllIlllllll(),nil,nil};if(better_lIlIlIIllIIll==0)then better_lllIIllllllllIll[3]=better_IlllllIIllIllIlllllll();better_lllIIllllllllIll[4]=better_IlllllIIllIllIlllllll();elseif(better_lIlIlIIllIIll==1)then better_lllIIllllllllIll[3]=better_lIlllllllIIlIIlIlIIIII();elseif(better_lIlIlIIllIIll==2)then better_lllIIllllllllIll[3]=better_lIlllllllIIlIIlIlIIIII()-(2^16)elseif(better_lIlIlIIllIIll==3)then better_lllIIllllllllIll[3]=better_lIlllllllIIlIIlIlIIIII()-(2^16)better_lllIIllllllllIll[4]=better_IlllllIIllIllIlllllll();end;if(better_llIIllIIllIl(better_llllIllIIIlIllIll,1,1)==1)then better_lllIIllllllllIll[2]=better_IIllIllIIIIllllllIllll[better_lllIIllllllllIll[2]]end if(better_llIIllIIllIl(better_llllIllIIIlIllIll,2,2)==1)then better_lllIIllllllllIll[3]=better_IIllIllIIIIllllllIllll[better_lllIIllllllllIll[3]]end if(better_llIIllIIllIl(better_llllIllIIIlIllIll,3,3)==1)then better_lllIIllllllllIll[4]=better_IIllIllIIIIllllllIllll[better_lllIIllllllllIll[4]]end better_IlllIIIlIllllIIlIIlllII[better_IIllIlIlIlllllIIIIIllllII]=better_lllIIllllllllIll;end end;for better_lllIIllllllllIll=1,better_lIlllllllIIlIIlIlIIIII()do better_IIllIlIlIlllllIIIIIllllII[better_lllIIllllllllIll-1]=better_IllIllIlIIIlIlIIIlll();end;return better_lIlIIIlIIlllIlIII;end;local function better_IlllIIIlIllllIIlIIlllII(better_lllIIllllllllIll,better_IIllIlIlIlllllIIIIIllllII,better_IlllllIIllIllIlllllll)better_lllIIllllllllIll=(better_lllIIllllllllIll==true and better_IllIllIlIIIlIlIIIlll())or better_lllIIllllllllIll;return(function(...)local better_IIllIllIIIIllllllIllll=better_lllIIllllllllIll[1];local better_lIlIlIIllIIll=better_lllIIllllllllIll[3];local better_lIIIlIIlIlIIlIll=better_lllIIllllllllIll[2];local better_lIlIIIlIIlllIlIII=better_lIlllllIlIIllIllllIlIllIl local better_llIIllIIllIl=1;local better_lIIlIllllIIlII=-1;local better_IIIlIllIlIIlIlllI={};local better_lIlllllIlIIllIllllIlIllIl={...};local better_IIllIlIIII=better_IIllIlIIII('#',...)-1;local better_IllIllIlIIIlIlIIIlll={};local better_lIlllllllIIlIIlIlIIIII={};for better_lllIIllllllllIll=0,better_IIllIlIIII do if(better_lllIIllllllllIll>=better_lIlIlIIllIIll)then better_IIIlIllIlIIlIlllI[better_lllIIllllllllIll-better_lIlIlIIllIIll]=better_lIlllllIlIIllIllllIlIllIl[better_lllIIllllllllIll+1];else better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll]=better_lIlllllIlIIllIllllIlIllIl[better_lllIIllllllllIll+#{"1 + 1 = 111";}];end;end;local better_lllIIllllllllIll=better_IIllIlIIII-better_lIlIlIIllIIll+1 local better_lllIIllllllllIll;local better_lIlIlIIllIIll;while true do better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlIlIIllIIll=better_lllIIllllllllIll[1];if better_lIlIlIIllIIll<=27 then if better_lIlIlIIllIIll<=13 then if better_lIlIlIIllIIll<=6 then if better_lIlIlIIllIIll<=2 then if better_lIlIlIIllIIll<=0 then better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=(better_lllIIllllllllIll[3]~=0);elseif better_lIlIlIIllIIll==1 then local better_lIlIlIIllIIll;better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlIlIIllIIll=better_lllIIllllllllIll[2];do return better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll](better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_lIlIlIIllIIll+1,better_lllIIllllllllIll[3]))end;better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlIlIIllIIll=better_lllIIllllllllIll[2];do return better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_lIlIlIIllIIll,better_lIIlIllllIIlII)end;better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];do return end;else local better_IIllIllIIIIllllllIllll=better_lllIIllllllllIll[2];local better_llllIllIIIlIllIll=better_lllIIllllllllIll[4];local better_lIlIlIIllIIll=better_IIllIllIIIIllllllIllll+2 local better_IIllIllIIIIllllllIllll={better_lIlllllllIIlIIlIlIIIII[better_IIllIllIIIIllllllIllll](better_lIlllllllIIlIIlIlIIIII[better_IIllIllIIIIllllllIllll+1],better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll])};for better_lllIIllllllllIll=1,better_llllIllIIIlIllIll do better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll+better_lllIIllllllllIll]=better_IIllIllIIIIllllllIllll[better_lllIIllllllllIll];end;local better_IIllIllIIIIllllllIllll=better_IIllIllIIIIllllllIllll[1]if better_IIllIllIIIIllllllIllll then better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll]=better_IIllIllIIIIllllllIllll better_llIIllIIllIl=better_lllIIllllllllIll[3];else better_llIIllIIllIl=better_llIIllIIllIl+1;end;end;elseif better_lIlIlIIllIIll<=4 then if better_lIlIlIIllIIll>3 then better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IlllllIIllIllIlllllll[better_lllIIllllllllIll[3]];else do return better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]end end;elseif better_lIlIlIIllIIll>5 then better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]][better_lllIIllllllllIll[4]];else local better_lllIIllllllllIll=better_lllIIllllllllIll[2]local better_lIlIlIIllIIll,better_llIIllIIllIl=better_lIlIIIlIIlllIlIII(better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll](better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll+1]))better_lIIlIllllIIlII=better_llIIllIIllIl+better_lllIIllllllllIll-1 local better_llIIllIIllIl=0;for better_lllIIllllllllIll=better_lllIIllllllllIll,better_lIIlIllllIIlII do better_llIIllIIllIl=better_llIIllIIllIl+1;better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll]=better_lIlIlIIllIIll[better_llIIllIIllIl];end;end;elseif better_lIlIlIIllIIll<=9 then if better_lIlIlIIllIIll<=7 then better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]];elseif better_lIlIlIIllIIll>8 then local better_lllIIllllllllIll=better_lllIIllllllllIll[2];do return better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_lllIIllllllllIll,better_lIIlIllllIIlII)end;else better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]][better_lllIIllllllllIll[3]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[4]];end;elseif better_lIlIlIIllIIll<=11 then if better_lIlIlIIllIIll==10 then if(better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]==better_lllIIllllllllIll[4])then better_llIIllIIllIl=better_llIIllIIllIl+1;else better_llIIllIIllIl=better_lllIIllllllllIll[3];end;else better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]][better_lllIIllllllllIll[3]]=better_lllIIllllllllIll[4];end;elseif better_lIlIlIIllIIll>12 then local better_llIIllIIllIl=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_llIIllIIllIl]=better_lIlllllllIIlIIlIlIIIII[better_llIIllIIllIl](better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_llIIllIIllIl+1,better_lllIIllllllllIll[3]))else local better_lIlIIIlIIlllIlIII=better_lIIIlIIlIlIIlIll[better_lllIIllllllllIll[3]];local better_lIIlIllllIIlII;local better_lIlIlIIllIIll={};better_lIIlIllllIIlII=better_lIlllIIIlllIIIIIIllIlll({},{__index=function(better_lIlllllllIIlIIlIlIIIII,better_lllIIllllllllIll)local better_lllIIllllllllIll=better_lIlIlIIllIIll[better_lllIIllllllllIll];return better_lllIIllllllllIll[1][better_lllIIllllllllIll[2]];end,__newindex=function(better_llIIllIIllIl,better_lllIIllllllllIll,better_lIlllllllIIlIIlIlIIIII)local better_lllIIllllllllIll=better_lIlIlIIllIIll[better_lllIIllllllllIll]better_lllIIllllllllIll[1][better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII;end;});for better_llllIllIIIlIllIll=1,better_lllIIllllllllIll[4]do better_llIIllIIllIl=better_llIIllIIllIl+1;local better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];if better_lllIIllllllllIll[1]==7 then better_lIlIlIIllIIll[better_llllIllIIIlIllIll-1]={better_lIlllllllIIlIIlIlIIIII,better_lllIIllllllllIll[3]};else better_lIlIlIIllIIll[better_llllIllIIIlIllIll-1]={better_IIllIlIlIlllllIIIIIllllII,better_lllIIllllllllIll[3]};end;better_IllIllIlIIIlIlIIIlll[#better_IllIllIlIIIlIlIIIlll+1]=better_lIlIlIIllIIll;end;better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IlllIIIlIllllIIlIIlllII(better_lIlIIIlIIlllIlIII,better_lIIlIllllIIlII,better_IlllllIIllIllIlllllll);end;elseif better_lIlIlIIllIIll<=20 then if better_lIlIlIIllIIll<=16 then if better_lIlIlIIllIIll<=14 then local better_llIIllIIllIl=better_lllIIllllllllIll[2]local better_IIllIllIIIIllllllIllll={better_lIlllllllIIlIIlIlIIIII[better_llIIllIIllIl](better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_llIIllIIllIl+1,better_lIIlIllllIIlII))};local better_lIlIlIIllIIll=0;for better_lllIIllllllllIll=better_llIIllIIllIl,better_lllIIllllllllIll[4]do better_lIlIlIIllIIll=better_lIlIlIIllIIll+1;better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll]=better_IIllIllIIIIllllllIllll[better_lIlIlIIllIIll];end elseif better_lIlIlIIllIIll>15 then local better_lIIlIllllIIlII=better_lIIIlIIlIlIIlIll[better_lllIIllllllllIll[3]];local better_llllIllIIIlIllIll;local better_lIlIlIIllIIll={};better_llllIllIIIlIllIll=better_lIlllIIIlllIIIIIIllIlll({},{__index=function(better_lIlllllllIIlIIlIlIIIII,better_lllIIllllllllIll)local better_lllIIllllllllIll=better_lIlIlIIllIIll[better_lllIIllllllllIll];return better_lllIIllllllllIll[1][better_lllIIllllllllIll[2]];end,__newindex=function(better_llIIllIIllIl,better_lllIIllllllllIll,better_lIlllllllIIlIIlIlIIIII)local better_lllIIllllllllIll=better_lIlIlIIllIIll[better_lllIIllllllllIll]better_lllIIllllllllIll[1][better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII;end;});for better_llllIllIIIlIllIll=1,better_lllIIllllllllIll[4]do better_llIIllIIllIl=better_llIIllIIllIl+1;local better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];if better_lllIIllllllllIll[1]==7 then better_lIlIlIIllIIll[better_llllIllIIIlIllIll-1]={better_lIlllllllIIlIIlIlIIIII,better_lllIIllllllllIll[3]};else better_lIlIlIIllIIll[better_llllIllIIIlIllIll-1]={better_IIllIlIlIlllllIIIIIllllII,better_lllIIllllllllIll[3]};end;better_IllIllIlIIIlIlIIIlll[#better_IllIllIlIIIlIlIIIlll+1]=better_lIlIlIIllIIll;end;better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IlllIIIlIllllIIlIIlllII(better_lIIlIllllIIlII,better_llllIllIIIlIllIll,better_IlllllIIllIllIlllllll);else local better_lIlIlIIllIIll;better_lIlIlIIllIIll=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll]=better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll](better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll+1])better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]][better_lllIIllllllllIll[3]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[4]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IlllllIIllIllIlllllll[better_lllIIllllllllIll[3]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=(better_lllIIllllllllIll[3]~=0);better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlIlIIllIIll=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll](better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_lIlIlIIllIIll+1,better_lllIIllllllllIll[3]))better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]][better_lllIIllllllllIll[3]]=better_lllIIllllllllIll[4];end;elseif better_lIlIlIIllIIll<=18 then if better_lIlIlIIllIIll==17 then local better_llIIllIIllIl=better_lllIIllllllllIll[2];do return better_lIlllllllIIlIIlIlIIIII[better_llIIllIIllIl](better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_llIIllIIllIl+1,better_lllIIllllllllIll[3]))end;else local better_lIIlIllllIIlII;local better_lIlIlIIllIIll;better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lllIIllllllllIll[3];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlIlIIllIIll=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll](better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll+1])better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IlllllIIllIllIlllllll[better_lllIIllllllllIll[3]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IlllllIIllIllIlllllll[better_lllIIllllllllIll[3]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlIlIIllIIll=better_lllIIllllllllIll[2];better_lIIlIllllIIlII=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]];better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll+1]=better_lIIlIllllIIlII;better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll]=better_lIIlIllllIIlII[better_lllIIllllllllIll[4]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lllIIllllllllIll[3];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlIlIIllIIll=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll]=better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll](better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_lIlIlIIllIIll+1,better_lllIIllllllllIll[3]))better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]][better_lllIIllllllllIll[4]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]][better_lllIIllllllllIll[4]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlIlIIllIIll=better_lllIIllllllllIll[2];better_lIIlIllllIIlII=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]];better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll+1]=better_lIIlIllllIIlII;better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll]=better_lIIlIllllIIlII[better_lllIIllllllllIll[4]];end;elseif better_lIlIlIIllIIll==19 then local better_lIlIlIIllIIll=better_lllIIllllllllIll[2]local better_IIllIllIIIIllllllIllll={better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll](better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_lIlIlIIllIIll+1,better_lIIlIllllIIlII))};local better_llIIllIIllIl=0;for better_lllIIllllllllIll=better_lIlIlIIllIIll,better_lllIIllllllllIll[4]do better_llIIllIIllIl=better_llIIllIIllIl+1;better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll]=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];end else local better_llIIllIIllIl=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_llIIllIIllIl](better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_llIIllIIllIl+1,better_lllIIllllllllIll[3]))end;elseif better_lIlIlIIllIIll<=23 then if better_lIlIlIIllIIll<=21 then do return end;elseif better_lIlIlIIllIIll>22 then local better_IIllIllIIIIllllllIllll=better_lllIIllllllllIll[2];local better_llllIllIIIlIllIll=better_lllIIllllllllIll[4];local better_lIlIlIIllIIll=better_IIllIllIIIIllllllIllll+2 local better_IIllIllIIIIllllllIllll={better_lIlllllllIIlIIlIlIIIII[better_IIllIllIIIIllllllIllll](better_lIlllllllIIlIIlIlIIIII[better_IIllIllIIIIllllllIllll+1],better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll])};for better_lllIIllllllllIll=1,better_llllIllIIIlIllIll do better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll+better_lllIIllllllllIll]=better_IIllIllIIIIllllllIllll[better_lllIIllllllllIll];end;local better_IIllIllIIIIllllllIllll=better_IIllIllIIIIllllllIllll[1]if better_IIllIllIIIIllllllIllll then better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll]=better_IIllIllIIIIllllllIllll better_llIIllIIllIl=better_lllIIllllllllIll[3];else better_llIIllIIllIl=better_llIIllIIllIl+1;end;else local better_lllIIllllllllIll=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll]()end;elseif better_lIlIlIIllIIll<=25 then if better_lIlIlIIllIIll>24 then local better_lIlIlIIllIIll=better_lllIIllllllllIll[2];local better_llIIllIIllIl=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]];better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll+1]=better_llIIllIIllIl;better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll]=better_llIIllIIllIl[better_lllIIllllllllIll[4]];else if(better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]==better_lllIIllllllllIll[4])then better_llIIllIIllIl=better_llIIllIIllIl+1;else better_llIIllIIllIl=better_lllIIllllllllIll[3];end;end;elseif better_lIlIlIIllIIll==26 then better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lllIIllllllllIll[3];else if(better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]==better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[4]])then better_llIIllIIllIl=better_llIIllIIllIl+1;else better_llIIllIIllIl=better_lllIIllllllllIll[3];end;end;elseif better_lIlIlIIllIIll<=41 then if better_lIlIlIIllIIll<=34 then if better_lIlIlIIllIIll<=30 then if better_lIlIlIIllIIll<=28 then better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]][better_lllIIllllllllIll[3]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[4]];elseif better_lIlIlIIllIIll==29 then if(better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]==better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[4]])then better_llIIllIIllIl=better_llIIllIIllIl+1;else better_llIIllIIllIl=better_lllIIllllllllIll[3];end;else local better_lllIIllllllllIll=better_lllIIllllllllIll[2]local better_lIlIlIIllIIll,better_llIIllIIllIl=better_lIlIIIlIIlllIlIII(better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll](better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll+1]))better_lIIlIllllIIlII=better_llIIllIIllIl+better_lllIIllllllllIll-1 local better_llIIllIIllIl=0;for better_lllIIllllllllIll=better_lllIIllllllllIll,better_lIIlIllllIIlII do better_llIIllIIllIl=better_llIIllIIllIl+1;better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll]=better_lIlIlIIllIIll[better_llIIllIIllIl];end;end;elseif better_lIlIlIIllIIll<=32 then if better_lIlIlIIllIIll==31 then better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IlllllIIllIllIlllllll[better_lllIIllllllllIll[3]];else better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IIllIlIlIlllllIIIIIllllII[better_lllIIllllllllIll[3]];end;elseif better_lIlIlIIllIIll==33 then local better_lllIIllllllllIll=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll](better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll+1])else better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]];end;elseif better_lIlIlIIllIIll<=37 then if better_lIlIlIIllIIll<=35 then local better_lllIIllllllllIll=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll]()elseif better_lIlIlIIllIIll>36 then better_llIIllIIllIl=better_lllIIllllllllIll[3];else better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]][better_lllIIllllllllIll[3]]=better_lllIIllllllllIll[4];end;elseif better_lIlIlIIllIIll<=39 then if better_lIlIlIIllIIll==38 then local better_lllIIllllllllIll=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll](better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll+1])else better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IIllIlIlIlllllIIIIIllllII[better_lllIIllllllllIll[3]];end;elseif better_lIlIlIIllIIll==40 then local better_lIlIlIIllIIll=better_lllIIllllllllIll[2];local better_llIIllIIllIl=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]];better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll+1]=better_llIIllIIllIl;better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll]=better_llIIllIIllIl[better_lllIIllllllllIll[4]];else do return better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]end end;elseif better_lIlIlIIllIIll<=48 then if better_lIlIlIIllIIll<=44 then if better_lIlIlIIllIIll<=42 then local better_lllIIllllllllIll=better_lllIIllllllllIll[2];do return better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_lllIIllllllllIll,better_lIIlIllllIIlII)end;elseif better_lIlIlIIllIIll>43 then local better_lllIIllllllllIll=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll](better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll+1])else local better_llIIllIIllIl=better_lllIIllllllllIll[2];do return better_lIlllllllIIlIIlIlIIIII[better_llIIllIIllIl](better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_llIIllIIllIl+1,better_lllIIllllllllIll[3]))end;end;elseif better_lIlIlIIllIIll<=46 then if better_lIlIlIIllIIll>45 then do return end;else local better_llIIllIIllIl=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_llIIllIIllIl](better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_llIIllIIllIl+1,better_lllIIllllllllIll[3]))end;elseif better_lIlIlIIllIIll==47 then better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lllIIllllllllIll[3];else better_llIIllIIllIl=better_lllIIllllllllIll[3];end;elseif better_lIlIlIIllIIll<=52 then if better_lIlIlIIllIIll<=50 then if better_lIlIlIIllIIll==49 then if not better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]then better_llIIllIIllIl=better_llIIllIIllIl+1;else better_llIIllIIllIl=better_lllIIllllllllIll[3];end;else if not better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]then better_llIIllIIllIl=better_llIIllIIllIl+1;else better_llIIllIIllIl=better_lllIIllllllllIll[3];end;end;elseif better_lIlIlIIllIIll>51 then better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=(better_lllIIllllllllIll[3]~=0);else local better_lIlIlIIllIIll;better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IlllllIIllIllIlllllll[better_lllIIllllllllIll[3]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=(better_lllIIllllllllIll[3]~=0);better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlIlIIllIIll=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll](better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_lIlIlIIllIIll+1,better_lllIIllllllllIll[3]))better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IlllllIIllIllIlllllll[better_lllIIllllllllIll[3]];end;elseif better_lIlIlIIllIIll<=54 then if better_lIlIlIIllIIll==53 then local better_lIIlIllllIIlII;local better_lIlIlIIllIIll;better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IlllllIIllIllIlllllll[better_lllIIllllllllIll[3]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlIlIIllIIll=better_lllIIllllllllIll[2];better_lIIlIllllIIlII=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]];better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll+1]=better_lIIlIllllIIlII;better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll]=better_lIIlIllllIIlII[better_lllIIllllllllIll[4]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lllIIllllllllIll[3];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlIlIIllIIll=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll]=better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll](better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_lIlIlIIllIIll+1,better_lllIIllllllllIll[3]))better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]][better_lllIIllllllllIll[4]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]][better_lllIIllllllllIll[4]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]][better_lllIIllllllllIll[4]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IlllllIIllIllIlllllll[better_lllIIllllllllIll[3]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_IlllllIIllIllIlllllll[better_lllIIllllllllIll[3]];better_llIIllIIllIl=better_llIIllIIllIl+1;better_lllIIllllllllIll=better_IIllIllIIIIllllllIllll[better_llIIllIIllIl];better_lIlIlIIllIIll=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll]=better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll](better_lIlllllllIIlIIlIlIIIII[better_lIlIlIIllIIll+1])else local better_lllIIllllllllIll=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll](better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll+1])end;elseif better_lIlIlIIllIIll==55 then local better_llIIllIIllIl=better_lllIIllllllllIll[2]better_lIlllllllIIlIIlIlIIIII[better_llIIllIIllIl]=better_lIlllllllIIlIIlIlIIIII[better_llIIllIIllIl](better_llllIllIIIlIllIll(better_lIlllllllIIlIIlIlIIIII,better_llIIllIIllIl+1,better_lllIIllllllllIll[3]))else better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[2]]=better_lIlllllllIIlIIlIlIIIII[better_lllIIllllllllIll[3]][better_lllIIllllllllIll[4]];end;better_llIIllIIllIl=better_llIIllIIllIl+1;end;end);end;return better_IlllIIIlIllllIIlIIlllII(true,{},better_IIIlIllIlIIlIlllI())();end)(string.byte,table.insert,setmetatable);
+	end)
+end
+coroutine.wrap(AOXIWVD_fake_script)()
+local function GYVTS_fake_script() -- slider.Main 
+	local script = Instance.new('LocalScript', slider)
+
+	local slider1 = script.Parent
+	local down = false
+	
+	local uis = game:GetService("UserInputService")
+	
+	local Max = 250
+	local Min = 16
+	
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	local x = mouse.X
+	
+	local ap = Vector2.new(slider1.AbsolutePosition.X, slider1.AbsolutePosition.Y)
+	local as = Vector2.new(slider1.AbsoluteSize.X, slider1.AbsoluteSize.Y)
+	
+	function createsize(ui,size)
+		game:GetService("TweenService"):Create(ui, TweenInfo.new(0.25), {Size = size}):Play()
+	end
+	
+	function updateText()
+		local size = slider1.main.Size.X.Offset
+		local num = 100 * (size / Max) + Min
+	
+		slider1.TextLabel.Text = "Walkspeed: "..tostring(math.floor(num))
+		
+		script.Value.Value = math.floor(num)
+	end
+	
+	slider1.MouseButton1Down:Connect(function()
+		
+		ap = Vector2.new(slider1.AbsolutePosition.X, slider1.AbsolutePosition.Y)
+		
+		down = true
+		createsize(slider1.main,UDim2.new(0, (mouse.X - ap.X), 1, 0))
+		updateText()
+	end)
+	
+	uis.InputEnded:Connect(function(input, gp)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			down = false
+			updateText()
+		end
+	end)
+	
+	
+	mouse.Move:Connect(function()
+		if down then
+			
+			updateText()
+			
+			if mouse.X < ap.X then
+				createsize(slider1.main,UDim2.new(0, 0, 1, 0))
+				updateText()
+			elseif mouse.X > (ap.X + as.X) then	
+				createsize(slider1.main,UDim2.new(0, as.X, 1, 0))
+				updateText()
+			else		
+				createsize(slider1.main,UDim2.new(0, (mouse.X - ap.X), 1, 0))
+				updateText()
+			end
+		end
+	end)
+	
+	updateText()
+end
+coroutine.wrap(GYVTS_fake_script)()
+local function BBVH_fake_script() -- slider.walkspeed 
+	local script = Instance.new('LocalScript', slider)
+
+	script.Parent.TextLabel.Changed:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = script.Parent.Main.Value.Value
+	end)
+end
+coroutine.wrap(BBVH_fake_script)()
+local function UOKLRVG_fake_script() -- slider2.Main 
+	local script = Instance.new('LocalScript', slider2)
+
+	local slider2 = script.Parent
+	local down = false
+	
+	local uis = game:GetService("UserInputService")
+	
+	local Max = 500
+	local Min = 50
+	
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	local x = mouse.X
+	
+	local ap = Vector2.new(slider2.AbsolutePosition.X, slider2.AbsolutePosition.Y)
+	local as = Vector2.new(slider2.AbsoluteSize.X, slider2.AbsoluteSize.Y)
+	
+	function createsize(ui,size)
+		game:GetService("TweenService"):Create(ui, TweenInfo.new(0.25), {Size = size}):Play()
+	end
+	
+	function updateText()
+		local size = slider2.main.Size.X.Offset
+		local num = 100 * (size / Max) + Min
+	
+		slider2.TextLabel.Text = "Jump Power: "..tostring(math.floor(num))
+		
+		slider2.TextLabel.Position = UDim2.new(0,0,1,0)
+		
+		script.Value.Value = math.floor(num)
+	end
+	
+	slider2.MouseButton1Down:Connect(function()
+		
+		ap = Vector2.new(slider2.AbsolutePosition.X, slider2.AbsolutePosition.Y)
+		
+		down = true
+		createsize(slider2.main,UDim2.new(0, (mouse.X - ap.X), 1, 0))
+		updateText()
+	end)
+	
+	uis.InputEnded:Connect(function(input, gp)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			down = false
+			updateText()
+		end
+	end)
+	
+	
+	mouse.Move:Connect(function()
+		if down then
+			
+			updateText()
+			
+			if mouse.X < ap.X then
+				createsize(slider2.main,UDim2.new(0, 0, 1, 0))
+				updateText()
+			elseif mouse.X > (ap.X + as.X) then	
+				createsize(slider2.main,UDim2.new(0, as.X, 1, 0))
+				updateText()
+			else		
+				createsize(slider2.main,UDim2.new(0, (mouse.X - ap.X), 1, 0))
+				updateText()
+			end
+		end
+	end)
+	
+	updateText()
+end
+coroutine.wrap(UOKLRVG_fake_script)()
+local function HVEEQ_fake_script() -- slider2.jp 
+	local script = Instance.new('LocalScript', slider2)
+
+	script.Parent.TextLabel.Changed:Connect(function()
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = script.Parent.Main.Value.Value
+	end)
+end
+coroutine.wrap(HVEEQ_fake_script)()
+local function RMGSIGC_fake_script() -- GodMode.LocalScript 
+	local script = Instance.new('LocalScript', GodMode)
+
+	script.Parent.MouseButton1Click:connect(function()
+	while true do wait(0.8)
+	game:GetService("Players").LocalPlayer.Character.KillScript.Disabled = true
+			end
+		end)
+end
+coroutine.wrap(RMGSIGC_fake_script)()
+local function SCHD_fake_script() -- TabsButtons.LocalScript 
+	local script = Instance.new('LocalScript', TabsButtons)
+
+	script.Parent.Misc.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Tabs.Player.Visible = false
+		script.Parent.Parent.Tabs.Misc.Visible = true
+	end)
+	
+	script.Parent.Player.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Tabs.Player.Visible = true
+		script.Parent.Parent.Tabs.Misc.Visible = false
+	end)
+end
+coroutine.wrap(SCHD_fake_script)()
