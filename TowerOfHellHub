@@ -1,4 +1,7 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
 
 local MAINHUB = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
@@ -196,7 +199,7 @@ UIAspectRatioConstraint.Parent = MAINHUB
 -- Scripts:
 
 -- MainFrame.boredweaky is disabled.
-local function LIMVHD_fake_script() -- loader.LocalScript 
+local function VDDDU_fake_script() -- loader.LocalScript 
 	local script = Instance.new('LocalScript', loader)
 
 	local txt = "Please Wait"
@@ -260,4 +263,4 @@ local function LIMVHD_fake_script() -- loader.LocalScript
 		showGui(result[1])
 	end
 end
-coroutine.wrap(LIMVHD_fake_script)()
+coroutine.wrap(VDDDU_fake_script)()
