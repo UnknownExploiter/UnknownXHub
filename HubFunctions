@@ -196,7 +196,7 @@ UIAspectRatioConstraint.Parent = MAINHUB
 -- Scripts:
 
 -- MainFrame.boredweaky is disabled.
-local function ECFW_fake_script() -- loader.LocalScript 
+local function LDLMVUU_fake_script() -- loader.LocalScript 
 	local script = Instance.new('LocalScript', loader)
 
 	local txt = "Please Wait"
@@ -260,4 +260,4 @@ local function ECFW_fake_script() -- loader.LocalScript
 		showGui(result[1])
 	end
 end
-coroutine.wrap(ECFW_fake_script)()
+coroutine.wrap(LDLMVUU_fake_script)()
