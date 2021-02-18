@@ -556,7 +556,7 @@ Title_2.TextWrapped = true
 
 -- Scripts:
 
-local function EVUQHVU_fake_script() -- RainbowFrame.LocalScript 
+local function PADHLL_fake_script() -- RainbowFrame.LocalScript 
 	local script = Instance.new('LocalScript', RainbowFrame)
 
 	local t = 5; 
@@ -572,8 +572,8 @@ local function EVUQHVU_fake_script() -- RainbowFrame.LocalScript
 		Frame.BackgroundColor3 = color
 	end)
 end
-coroutine.wrap(EVUQHVU_fake_script)()
-local function SSKFZD_fake_script() -- MainFrame.Dragify 
+coroutine.wrap(PADHLL_fake_script)()
+local function HPNMSX_fake_script() -- MainFrame.Dragify 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local UIS = game:GetService("UserInputService")
@@ -614,16 +614,16 @@ local function SSKFZD_fake_script() -- MainFrame.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(SSKFZD_fake_script)()
-local function QUQI_fake_script() -- Fly.LocalScript 
+coroutine.wrap(HPNMSX_fake_script)()
+local function CEGOHM_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/7rXZ9VNc", true))()
 		end)
 end
-coroutine.wrap(QUQI_fake_script)()
-local function DAYRCQ_fake_script() -- InfJumpText.LocalScript 
+coroutine.wrap(CEGOHM_fake_script)()
+local function YVWXLDM_fake_script() -- InfJumpText.LocalScript 
 	local script = Instance.new('LocalScript', InfJumpText)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -647,8 +647,8 @@ local function DAYRCQ_fake_script() -- InfJumpText.LocalScript
 	end)
 	end)
 end
-coroutine.wrap(DAYRCQ_fake_script)()
-local function ZFZLT_fake_script() -- ClickTp.LocalScript 
+coroutine.wrap(YVWXLDM_fake_script)()
+local function JGHO_fake_script() -- ClickTp.LocalScript 
 	local script = Instance.new('LocalScript', ClickTp)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -664,8 +664,8 @@ local function ZFZLT_fake_script() -- ClickTp.LocalScript
 		tool.Parent = game.Players.LocalPlayer.Backpack
 	end)
 end
-coroutine.wrap(ZFZLT_fake_script)()
-local function YVOVY_fake_script() -- Fire.LocalScript 
+coroutine.wrap(JGHO_fake_script)()
+local function AQFPNNF_fake_script() -- Fire.LocalScript 
 	local script = Instance.new('LocalScript', Fire)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -676,8 +676,8 @@ local function YVOVY_fake_script() -- Fire.LocalScript
 		Fire.SecondaryColor = Color3.new(1,1,90)
 		end)
 end
-coroutine.wrap(YVOVY_fake_script)()
-local function SANAW_fake_script() -- RTX.LocalScript 
+coroutine.wrap(AQFPNNF_fake_script)()
+local function HZPQ_fake_script() -- RTX.LocalScript 
 	local script = Instance.new('LocalScript', RTX)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -697,8 +697,8 @@ local function SANAW_fake_script() -- RTX.LocalScript
 		rays.Spread = 1
 	end)
 end
-coroutine.wrap(SANAW_fake_script)()
-local function XZVX_fake_script() -- AutoSell.LocalScript 
+coroutine.wrap(HZPQ_fake_script)()
+local function SRBY_fake_script() -- AutoSell.LocalScript 
 	local script = Instance.new('LocalScript', AutoSell)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -706,8 +706,8 @@ local function XZVX_fake_script() -- AutoSell.LocalScript
 		Event:FireServer()
 		end)
 end
-coroutine.wrap(XZVX_fake_script)()
-local function SWTXQ_fake_script() -- Anoymous.LocalScript 
+coroutine.wrap(SRBY_fake_script)()
+local function OKDEGQR_fake_script() -- Anoymous.LocalScript 
 	local script = Instance.new('LocalScript', Anoymous)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -716,8 +716,8 @@ local function SWTXQ_fake_script() -- Anoymous.LocalScript
 		pe.VelocitySpread = 100
 	end)
 end
-coroutine.wrap(SWTXQ_fake_script)()
-local function FWMXDZP_fake_script() -- Btools.LocalScript 
+coroutine.wrap(OKDEGQR_fake_script)()
+local function YMAJLF_fake_script() -- Btools.LocalScript 
 	local script = Instance.new('LocalScript', Btools)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -729,8 +729,8 @@ local function FWMXDZP_fake_script() -- Btools.LocalScript
 		c.BinType = 4
 	end)
 end
-coroutine.wrap(FWMXDZP_fake_script)()
-local function XTYFHV_fake_script() -- AutoCrystal.LocalScript 
+coroutine.wrap(YMAJLF_fake_script)()
+local function WYZN_fake_script() -- AutoCrystal.LocalScript 
 	local script = Instance.new('LocalScript', AutoCrystal)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -739,11 +739,12 @@ local function XTYFHV_fake_script() -- AutoCrystal.LocalScript
 	local A_2 = true
 	local Event = game:GetService("ReplicatedStorage").Game.Remotes["Magnet_Recept"]
 	Event:FireServer(A_1, A_2)
-			end
-		end)
+		end
+	end
+		
 end
-coroutine.wrap(XTYFHV_fake_script)()
-local function WIAOM_fake_script() -- EventCrystal.Event Crystal 
+coroutine.wrap(WYZN_fake_script)()
+local function OXSIH_fake_script() -- EventCrystal.Event Crystal 
 	local script = Instance.new('LocalScript', EventCrystal)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -755,8 +756,8 @@ local function WIAOM_fake_script() -- EventCrystal.Event Crystal
 			end
 		end)
 end
-coroutine.wrap(WIAOM_fake_script)()
-local function HXUCSTI_fake_script() -- BoostFps.Event Crystal 
+coroutine.wrap(OXSIH_fake_script)()
+local function FFLS_fake_script() -- BoostFps.Event Crystal 
 	local script = Instance.new('LocalScript', BoostFps)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -775,8 +776,8 @@ local function HXUCSTI_fake_script() -- BoostFps.Event Crystal
 		game:GetService("Workspace")["NPC_Animation"]:Destroy()
 		end)
 end
-coroutine.wrap(HXUCSTI_fake_script)()
-local function TBVHUY_fake_script() -- TabsButtons.LocalScript 
+coroutine.wrap(FFLS_fake_script)()
+local function CPIP_fake_script() -- TabsButtons.LocalScript 
 	local script = Instance.new('LocalScript', TabsButtons)
 
 	script.Parent.Misc.MouseButton1Click:Connect(function()
@@ -789,4 +790,4 @@ local function TBVHUY_fake_script() -- TabsButtons.LocalScript
 		script.Parent.Parent.Tabs.Misc.Visible = false
 	end)
 end
-coroutine.wrap(TBVHUY_fake_script)()
+coroutine.wrap(CPIP_fake_script)()
