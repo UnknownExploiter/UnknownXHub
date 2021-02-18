@@ -1,4 +1,7 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
 
 local Sim = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
