@@ -1,4 +1,5 @@
 
+
 local Sim = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -77,6 +78,7 @@ local UICorner_35 = Instance.new("UICorner")
 local Frame_15 = Instance.new("Frame")
 local UICorner_36 = Instance.new("UICorner")
 
+--Properties:
 
 Sim.Name = "Sim"
 Sim.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -564,9 +566,9 @@ Frame_15.ZIndex = 3
 UICorner_36.CornerRadius = UDim.new(0, 4)
 UICorner_36.Parent = Frame_15
 
+-- Scripts:
 
-
-local function UBSSFV_fake_script() -- RainbowFrame.LocalScript 
+local function HZHY_fake_script() -- RainbowFrame.LocalScript 
 	local script = Instance.new('LocalScript', RainbowFrame)
 
 	local t = 5; 
@@ -582,8 +584,8 @@ local function UBSSFV_fake_script() -- RainbowFrame.LocalScript
 		Frame.BackgroundColor3 = color
 	end)
 end
-coroutine.wrap(UBSSFV_fake_script)()
-local function ELMJY_fake_script() -- MainFrame.Dragify 
+coroutine.wrap(HZHY_fake_script)()
+local function GNHBVY_fake_script() -- MainFrame.Dragify 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local UIS = game:GetService("UserInputService")
@@ -624,16 +626,16 @@ local function ELMJY_fake_script() -- MainFrame.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(ELMJY_fake_script)()
-local function QOLDNZ_fake_script() -- Fly.LocalScript 
+coroutine.wrap(GNHBVY_fake_script)()
+local function CNFT_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/7rXZ9VNc", true))()
 		end)
 end
-coroutine.wrap(QOLDNZ_fake_script)()
-local function DLEZ_fake_script() -- InfJumpText.LocalScript 
+coroutine.wrap(CNFT_fake_script)()
+local function KSHERP_fake_script() -- InfJumpText.LocalScript 
 	local script = Instance.new('LocalScript', InfJumpText)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -657,8 +659,8 @@ local function DLEZ_fake_script() -- InfJumpText.LocalScript
 	end)
 	end)
 end
-coroutine.wrap(DLEZ_fake_script)()
-local function CQPM_fake_script() -- ClickTp.LocalScript 
+coroutine.wrap(KSHERP_fake_script)()
+local function NVYRJYB_fake_script() -- ClickTp.LocalScript 
 	local script = Instance.new('LocalScript', ClickTp)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -674,8 +676,8 @@ local function CQPM_fake_script() -- ClickTp.LocalScript
 		tool.Parent = game.Players.LocalPlayer.Backpack
 	end)
 end
-coroutine.wrap(CQPM_fake_script)()
-local function JHAFDVT_fake_script() -- Fire.LocalScript 
+coroutine.wrap(NVYRJYB_fake_script)()
+local function SXAVMXQ_fake_script() -- Fire.LocalScript 
 	local script = Instance.new('LocalScript', Fire)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -686,8 +688,8 @@ local function JHAFDVT_fake_script() -- Fire.LocalScript
 		Fire.SecondaryColor = Color3.new(1,1,90)
 		end)
 end
-coroutine.wrap(JHAFDVT_fake_script)()
-local function OOMPIOE_fake_script() -- RTX.LocalScript 
+coroutine.wrap(SXAVMXQ_fake_script)()
+local function GTIDZOB_fake_script() -- RTX.LocalScript 
 	local script = Instance.new('LocalScript', RTX)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -707,8 +709,8 @@ local function OOMPIOE_fake_script() -- RTX.LocalScript
 		rays.Spread = 1
 	end)
 end
-coroutine.wrap(OOMPIOE_fake_script)()
-local function QNJBSMI_fake_script() -- AutoSell.LocalScript 
+coroutine.wrap(GTIDZOB_fake_script)()
+local function MELMONA_fake_script() -- AutoSell.LocalScript 
 	local script = Instance.new('LocalScript', AutoSell)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -716,8 +718,8 @@ local function QNJBSMI_fake_script() -- AutoSell.LocalScript
 		Event:FireServer()
 		end)
 end
-coroutine.wrap(QNJBSMI_fake_script)()
-local function BIWHZJX_fake_script() -- Anoymous.LocalScript 
+coroutine.wrap(MELMONA_fake_script)()
+local function OZMRJYD_fake_script() -- Anoymous.LocalScript 
 	local script = Instance.new('LocalScript', Anoymous)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -726,8 +728,8 @@ local function BIWHZJX_fake_script() -- Anoymous.LocalScript
 		pe.VelocitySpread = 100
 	end)
 end
-coroutine.wrap(BIWHZJX_fake_script)()
-local function KLPO_fake_script() -- Btools.LocalScript 
+coroutine.wrap(OZMRJYD_fake_script)()
+local function ACLTD_fake_script() -- Btools.LocalScript 
 	local script = Instance.new('LocalScript', Btools)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -739,8 +741,8 @@ local function KLPO_fake_script() -- Btools.LocalScript
 		c.BinType = 4
 	end)
 end
-coroutine.wrap(KLPO_fake_script)()
-local function YJKD_fake_script() -- AutoCrystal.LocalScript 
+coroutine.wrap(ACLTD_fake_script)()
+local function XIQMLS_fake_script() -- AutoCrystal.LocalScript 
 	local script = Instance.new('LocalScript', AutoCrystal)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -752,8 +754,8 @@ local function YJKD_fake_script() -- AutoCrystal.LocalScript
 			end
 		end)
 end
-coroutine.wrap(YJKD_fake_script)()
-local function EGSRIK_fake_script() -- EventCrystal.Event Crystal 
+coroutine.wrap(XIQMLS_fake_script)()
+local function UAKOI_fake_script() -- EventCrystal.Event Crystal 
 	local script = Instance.new('LocalScript', EventCrystal)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -765,8 +767,8 @@ local function EGSRIK_fake_script() -- EventCrystal.Event Crystal
 			end
 		end)
 end
-coroutine.wrap(EGSRIK_fake_script)()
-local function LDTWLJ_fake_script() -- BoostFps.Event Crystal 
+coroutine.wrap(UAKOI_fake_script)()
+local function LRTPLP_fake_script() -- BoostFps.Event Crystal 
 	local script = Instance.new('LocalScript', BoostFps)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -785,8 +787,8 @@ local function LDTWLJ_fake_script() -- BoostFps.Event Crystal
 		game:GetService("Workspace")["NPC_Animation"]:Destroy()
 		end)
 end
-coroutine.wrap(LDTWLJ_fake_script)()
-local function RVNY_fake_script() -- TabsButtons.LocalScript 
+coroutine.wrap(LRTPLP_fake_script)()
+local function WUVU_fake_script() -- TabsButtons.LocalScript 
 	local script = Instance.new('LocalScript', TabsButtons)
 
 	script.Parent.Misc.MouseButton1Click:Connect(function()
@@ -799,4 +801,4 @@ local function RVNY_fake_script() -- TabsButtons.LocalScript
 		script.Parent.Parent.Tabs.Misc.Visible = false
 	end)
 end
-coroutine.wrap(RVNY_fake_script)()
+coroutine.wrap(WUVU_fake_script)()
