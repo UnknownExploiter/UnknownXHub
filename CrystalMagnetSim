@@ -73,10 +73,7 @@ local Misc_2 = Instance.new("TextButton")
 local UICorner_33 = Instance.new("UICorner")
 local Frame_14 = Instance.new("Frame")
 local UICorner_34 = Instance.new("UICorner")
-local Credits = Instance.new("TextButton")
-local UICorner_35 = Instance.new("UICorner")
-local Frame_15 = Instance.new("Frame")
-local UICorner_36 = Instance.new("UICorner")
+local Title_2 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -540,35 +537,23 @@ Frame_14.ZIndex = 3
 UICorner_34.CornerRadius = UDim.new(0, 4)
 UICorner_34.Parent = Frame_14
 
-Credits.Name = "Credits"
-Credits.Parent = MainFrame
-Credits.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
-Credits.BorderSizePixel = 0
-Credits.Position = UDim2.new(0.610117733, 0, 0.0419465974, 0)
-Credits.Size = UDim2.new(0, 168, 0, 31)
-Credits.ZIndex = 4
-Credits.AutoButtonColor = false
-Credits.Font = Enum.Font.SourceSansBold
-Credits.Text = "Made by U_E#5717"
-Credits.TextColor3 = Color3.fromRGB(255, 255, 255)
-Credits.TextScaled = true
-Credits.TextSize = 14.000
-Credits.TextWrapped = true
-
-UICorner_35.CornerRadius = UDim.new(0, 4)
-UICorner_35.Parent = Credits
-
-Frame_15.Parent = Credits
-Frame_15.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-Frame_15.Size = UDim2.new(0, 167, 0, 34)
-Frame_15.ZIndex = 3
-
-UICorner_36.CornerRadius = UDim.new(0, 4)
-UICorner_36.Parent = Frame_15
+Title_2.Name = "Title"
+Title_2.Parent = MainFrame
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.698072791, 0, 0.0799999982, 0)
+Title_2.Size = UDim2.new(0, 135, 0, 39)
+Title_2.ZIndex = 3
+Title_2.Font = Enum.Font.SourceSansBold
+Title_2.Text = "Made by U_E5717"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
 
 -- Scripts:
 
-local function HZHY_fake_script() -- RainbowFrame.LocalScript 
+local function RMAXFCP_fake_script() -- RainbowFrame.LocalScript 
 	local script = Instance.new('LocalScript', RainbowFrame)
 
 	local t = 5; 
@@ -584,8 +569,8 @@ local function HZHY_fake_script() -- RainbowFrame.LocalScript
 		Frame.BackgroundColor3 = color
 	end)
 end
-coroutine.wrap(HZHY_fake_script)()
-local function GNHBVY_fake_script() -- MainFrame.Dragify 
+coroutine.wrap(RMAXFCP_fake_script)()
+local function AUHEKV_fake_script() -- MainFrame.Dragify 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local UIS = game:GetService("UserInputService")
@@ -626,16 +611,16 @@ local function GNHBVY_fake_script() -- MainFrame.Dragify
 	
 	dragify(script.Parent)
 end
-coroutine.wrap(GNHBVY_fake_script)()
-local function CNFT_fake_script() -- Fly.LocalScript 
+coroutine.wrap(AUHEKV_fake_script)()
+local function ASDCFP_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	script.Parent.MouseButton1Click:connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/7rXZ9VNc", true))()
 		end)
 end
-coroutine.wrap(CNFT_fake_script)()
-local function KSHERP_fake_script() -- InfJumpText.LocalScript 
+coroutine.wrap(ASDCFP_fake_script)()
+local function QRICD_fake_script() -- InfJumpText.LocalScript 
 	local script = Instance.new('LocalScript', InfJumpText)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -659,8 +644,8 @@ local function KSHERP_fake_script() -- InfJumpText.LocalScript
 	end)
 	end)
 end
-coroutine.wrap(KSHERP_fake_script)()
-local function NVYRJYB_fake_script() -- ClickTp.LocalScript 
+coroutine.wrap(QRICD_fake_script)()
+local function USBVW_fake_script() -- ClickTp.LocalScript 
 	local script = Instance.new('LocalScript', ClickTp)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -676,8 +661,8 @@ local function NVYRJYB_fake_script() -- ClickTp.LocalScript
 		tool.Parent = game.Players.LocalPlayer.Backpack
 	end)
 end
-coroutine.wrap(NVYRJYB_fake_script)()
-local function SXAVMXQ_fake_script() -- Fire.LocalScript 
+coroutine.wrap(USBVW_fake_script)()
+local function ZABJ_fake_script() -- Fire.LocalScript 
 	local script = Instance.new('LocalScript', Fire)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -688,8 +673,8 @@ local function SXAVMXQ_fake_script() -- Fire.LocalScript
 		Fire.SecondaryColor = Color3.new(1,1,90)
 		end)
 end
-coroutine.wrap(SXAVMXQ_fake_script)()
-local function GTIDZOB_fake_script() -- RTX.LocalScript 
+coroutine.wrap(ZABJ_fake_script)()
+local function WJIWR_fake_script() -- RTX.LocalScript 
 	local script = Instance.new('LocalScript', RTX)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -709,8 +694,8 @@ local function GTIDZOB_fake_script() -- RTX.LocalScript
 		rays.Spread = 1
 	end)
 end
-coroutine.wrap(GTIDZOB_fake_script)()
-local function MELMONA_fake_script() -- AutoSell.LocalScript 
+coroutine.wrap(WJIWR_fake_script)()
+local function MVAI_fake_script() -- AutoSell.LocalScript 
 	local script = Instance.new('LocalScript', AutoSell)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -718,8 +703,8 @@ local function MELMONA_fake_script() -- AutoSell.LocalScript
 		Event:FireServer()
 		end)
 end
-coroutine.wrap(MELMONA_fake_script)()
-local function OZMRJYD_fake_script() -- Anoymous.LocalScript 
+coroutine.wrap(MVAI_fake_script)()
+local function MENZ_fake_script() -- Anoymous.LocalScript 
 	local script = Instance.new('LocalScript', Anoymous)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -728,8 +713,8 @@ local function OZMRJYD_fake_script() -- Anoymous.LocalScript
 		pe.VelocitySpread = 100
 	end)
 end
-coroutine.wrap(OZMRJYD_fake_script)()
-local function ACLTD_fake_script() -- Btools.LocalScript 
+coroutine.wrap(MENZ_fake_script)()
+local function ZJBO_fake_script() -- Btools.LocalScript 
 	local script = Instance.new('LocalScript', Btools)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -741,8 +726,8 @@ local function ACLTD_fake_script() -- Btools.LocalScript
 		c.BinType = 4
 	end)
 end
-coroutine.wrap(ACLTD_fake_script)()
-local function XIQMLS_fake_script() -- AutoCrystal.LocalScript 
+coroutine.wrap(ZJBO_fake_script)()
+local function PNKWTD_fake_script() -- AutoCrystal.LocalScript 
 	local script = Instance.new('LocalScript', AutoCrystal)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -754,8 +739,8 @@ local function XIQMLS_fake_script() -- AutoCrystal.LocalScript
 			end
 		end)
 end
-coroutine.wrap(XIQMLS_fake_script)()
-local function UAKOI_fake_script() -- EventCrystal.Event Crystal 
+coroutine.wrap(PNKWTD_fake_script)()
+local function CROBN_fake_script() -- EventCrystal.Event Crystal 
 	local script = Instance.new('LocalScript', EventCrystal)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -767,8 +752,8 @@ local function UAKOI_fake_script() -- EventCrystal.Event Crystal
 			end
 		end)
 end
-coroutine.wrap(UAKOI_fake_script)()
-local function LRTPLP_fake_script() -- BoostFps.Event Crystal 
+coroutine.wrap(CROBN_fake_script)()
+local function LIXHBU_fake_script() -- BoostFps.Event Crystal 
 	local script = Instance.new('LocalScript', BoostFps)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -787,8 +772,8 @@ local function LRTPLP_fake_script() -- BoostFps.Event Crystal
 		game:GetService("Workspace")["NPC_Animation"]:Destroy()
 		end)
 end
-coroutine.wrap(LRTPLP_fake_script)()
-local function WUVU_fake_script() -- TabsButtons.LocalScript 
+coroutine.wrap(LIXHBU_fake_script)()
+local function HQHHZ_fake_script() -- TabsButtons.LocalScript 
 	local script = Instance.new('LocalScript', TabsButtons)
 
 	script.Parent.Misc.MouseButton1Click:Connect(function()
@@ -801,4 +786,4 @@ local function WUVU_fake_script() -- TabsButtons.LocalScript
 		script.Parent.Parent.Tabs.Misc.Visible = false
 	end)
 end
-coroutine.wrap(WUVU_fake_script)()
+coroutine.wrap(HQHHZ_fake_script)()
